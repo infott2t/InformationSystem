@@ -10,6 +10,7 @@ for example, Information System for better workplace.
 <p>So, I make this site, information system for work.</p>
 <p>Day : development web circumtance.</p>
 <p>2017-05-13, Starting Github on upload.</p>
+<p>2017-05-19, up Github on upload</p>
 <a href="http://ee32320.godohosting.com/index.php/welcome">InformationSystem for work ver17-2., link http address: http://ee32320.godohosting.com/index.php/welcome</a>
 <h4>Share the intellectual property , throught the online, internet.</h4>
 <br/>

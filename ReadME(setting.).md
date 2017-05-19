@@ -49,7 +49,29 @@
 <p>  KEY `user_name` (`user_name`,`user_email`)</p>
 <p>) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;</p>
 <br/>
-
+<h3>4. /application/config/database.php </h3>
+<p>Need a DBMS, local for example.</p>
+<p>$db['default'] = array(</p>
+<p>'dsn'	=> '',</p>
+<p>'hostname' => 'localhost',</p>
+<p>'username' => '',</p>
+<p>'password' => '',</p>
+<p>'database' => '',</p>
+<p>'dbdriver' => 'mysqli',</p>
+<p>'dbprefix' => '',</p>
+<p>'pconnect' => FALSE,</p>
+<p>'db_debug' => (ENVIRONMENT !== 'production'),</p>
+<p>'cache_on' => FALSE,</p>
+<p>'cachedir' => '',</p>
+<p>'char_set' => 'utf8',</p>
+<p>'dbcollat' => 'utf8_general_ci',</p>
+<p>'swap_pre' => '',</p>
+<p>'encrypt' => FALSE,</p>
+<p>'compress' => FALSE,</p>
+<p>'stricton' => FALSE,</p>
+<p>'failover' => array(),</p>
+<p>'save_queries' => TRUE</p>
+<p>);</p>
 <h3>Thank you for watching, ReadME(setting) file.</h3>
 
  
