@@ -10,7 +10,7 @@ for example, Information System for better workplace.
 <p>So, I make this site, information system for work.</p>
 <p>Day : development web circumtance.</p>
 <p>2017-05-13, Starting Github on upload.</p>
-<p>2017-05-19, up Github on upload</p>
+<p>2017-05-19, Github on upload</p>
 <a href="http://ee32320.godohosting.com/index.php/welcome">InformationSystem for work ver17-2., link http address: http://ee32320.godohosting.com/index.php/welcome</a>
 <p></p>
 <p>NOW DIFFERENT WEBSITE(http://ee32320.godohosting.com/index.php/welcome/) AND GITHUB(https://www.github.com/ee32320/InformationSystem), Reason write(2017-05-19) log link, refenrece:<a href="http://ee32320.godohosting.com">http://ee32320.godohosting.com</a></p>
@@ -115,8 +115,8 @@ for example, Information System for better workplace.
 <h4>This webpage, write day : 2017-05-19</h4>
 <br/>
 <p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>.</p>
-<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href="https://github.com/ee32320/InformationSystem/blob/master/LICENSE">MIT</a></p>
-<p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href="https://github.com/ee32320/InformationSystem/blob/master/License.md">https://github.com/ee32320/InformationSystem/blob/master/License.md</a> ; MIT</p>
+<p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> ; CC BY 4.0</p>
 <br/> 
 
 
