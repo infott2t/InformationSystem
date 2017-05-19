@@ -36,7 +36,7 @@
 <p>);</p>
 <h4>About, session. codeigniter menual reference : <a href="http://www.ciboard.co.kr/user_guide/en/libraries/sessions.html">http://www.ciboard.co.kr/user_guide/en/libraries/sessions.html</a></h4>
 <br/> 
-<h3>3. Create user_info table, database for example SQL-> MySql</h3>
+<h3>3. Create user_info table,  database for example SQL-> MySql</h3>
 <p>CREATE TABLE `user_info` (</p>
 <p>  `user_id` int(20) NOT NULL AUTO_INCREMENT,</p>
 <p>  `user_name` varchar(20) DEFAULT NULL,</p>
@@ -50,13 +50,13 @@
 <p>) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;</p>
 <br/>
 <h3>4. /application/config/database.php </h3>
-<p>Need a DBMS, local for example.</p>
+<p>Need a DBMS(This setting, use a MySql), local for example.</p>
 <p>$db['default'] = array(</p>
 <p>'dsn'	=> '',</p>
-<p>'hostname' => 'localhost',</p>
-<p>'username' => '',</p>
-<p>'password' => '',</p>
-<p>'database' => '',</p>
+<p>'hostname' => 'localhost', </p>
+<p>'username' => '',  //like word, root</p>
+<p>'password' => '',// root password</p>
+<p>'database' => '',// sql, create database name1; then use, name1.</p>
 <p>'dbdriver' => 'mysqli',</p>
 <p>'dbprefix' => '',</p>
 <p>'pconnect' => FALSE,</p>
