@@ -31,17 +31,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <br/>
 <h3>I use software this web programming,(used gone or used, like a log write.) and Licence announce.</h3>
 <br/>
-<h4>1. I use <span style="font-style: italic;">CodeIgniter</span>. (<a href="https://codeigniter.com/">https://codeigniter.com</a>)</h4> 
+<h4>1. I use <span style="font-style: italic;">CodeIgniter</span>. (<a href="https://codeigniter.com/">Https://codeigniter.com</a>)</h4> 
 
 <p><a href="https://github.com/bcit-ci/CodeIgniter/blob/develop/license.txt">Https://github.com/bcit-ci/CodeIgniter/blob/develop/license.txt</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.  </p>
 <br/>
 
-<h4>2. I use <span style="font-style: italic;">bootstrap</span>. (<a href="http://www.getbootstrap.com/">http://www.getbootstrap.com</a>)</h4> 
+<h4>2. I use <span style="font-style: italic;">bootstrap</span>. (<a href="http://www.getbootstrap.com/">Http://www.getbootstrap.com</a>)</h4> 
 
 <p><a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">Https://github.com/twbs/bootstrap/blob/master/LICENSE</a>) : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>	
 
-<h4>3. I use <span style="font-style: italic;">jQuery, jQuery Mobile, JQuery UI</span>. ( <a href="http://www.jquery.com/">http:///www.jquery.com</a>, <a href="http://www.jquerymobile.com/">http://www.jquerymobile.com</a>, <a href="http://www.jqueryui.com/">http://www.jqueryui.com</a>)</h4>
+<h4>3. I use <span style="font-style: italic;">jQuery, jQuery Mobile, JQuery UI</span>. ( <a href="http://www.jquery.com/">Http:///www.jquery.com</a>, <a href="http://www.jquerymobile.com/">Http://www.jquerymobile.com</a>, <a href="http://www.jqueryui.com/">Http://www.jqueryui.com</a>)</h4>
 
 <p><a href="https://jquery.org/license/">Https://jquery.org/license</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>	
@@ -51,17 +51,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <p><a href="https://www.w3schools.com/w3css/default.asp">Https://www.w3schools.com/w3css/default.asp</a> : Free licence. On notice that, this webpage.</p>
 <br/>	
 
-<h4>5. I use <span style="font-style:italic;">gryphicon FREE</span>. (<a href="http://www.glyphicons.com">http://www.glyphicons.com</a>)</h4>
+<h4>5. I use <span style="font-style:italic;">gryphicon FREE</span>. (<a href="http://www.glyphicons.com">Http://www.glyphicons.com</a>)</h4>
 
 <p><a href="http://www.glyphicons.com/">Http://www.glyphicons.com</a> : CC License. On notice that, this webpage.</p>
 <br/>
 	
-<h4>6. I use <span style="font-style:italic;">Normalize.css</span>.&nbsp;(<a href="https://necolas.github.io/normalize.css">https://necolas.github.io/normalize.css</a>).</h4>
+<h4>6. I use <span style="font-style:italic;">Normalize.css</span>.&nbsp;(<a href="https://necolas.github.io/normalize.css">Https://necolas.github.io/normalize.css</a>).</h4>
 
 <p> <a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md">Https://github.com/necolas/normalize.css/blob/master/LICENSE.md</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>	
 
-<h4>7. I use <span style="font-style:italic;">DataTables Table plug-in for jQuery</span>. (<a href="https://github.com/DataTables/DataTables">https://github.com/DataTables/DataTables</a>).</h4>
+<h4>7. I use <span style="font-style:italic;">DataTables Table plug-in for jQuery</span>. (<a href="https://github.com/DataTables/DataTables">Https://github.com/DataTables/DataTables</a>).</h4>
 
 <p><a href="https://github.com/DataTables/DataTables/blob/master/license.txt">Https://github.com/DataTables/DataTables/blob/master/license.txt</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>
@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <p><a href="https://github.com/jackmoore/zoom/blob/master/LICENSE.md">Https://github.com/jackmoore/zoom/blob/master/LICENSE.md</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>
 	
-<h4>9. I use <span style="font-style:italic;">Bootflat</span>. (<a href="http://bootflat.github.io/">http://bootflat.github.io</a>)</h4>
+<h4>9. I use <span style="font-style:italic;">Bootflat</span>. (<a href="http://bootflat.github.io/">Http://bootflat.github.io</a>)</h4>
 <p><a href="https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE">Https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>	
 
