@@ -60,23 +60,24 @@ for example, Information System for better workplace.
 <h4>I use software this web programming,(used gone or used, like a log write.) and Licence announce.</h4>
 <p>1. I use <span style="font-style: italic;">CodeIgniter</span>. (<a href="https://codeigniter.com/">https://codeigniter.com/</a>) ; that copy right rule,<a href="https://github.com/bcit-ci/CodeIgniter/blob/develop/license.txt">https://github.com/bcit-ci/CodeIgniter/blob/develop/license.txt</a> ; 'The MIT License (MIT)', I show this sentence.  </p>
 
-<p>2. I use <span style="font-style: italic;">bootstrap</span>. (<a href="http://www.getbootstrap.com/">http://www.getbootstrap.com/</a>, <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>) ; that copy right rule,'The MIT License (MIT)', I show this sentence.</p>
+<p>2. I use <span style="font-style: italic;">bootstrap</span>. (<a href="http://www.getbootstrap.com/">http://www.getbootstrap.com/</a>, <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>3. I use <span style="font-style: italic;">jQuery, jQuery Mobile, JQuery UI</span>. ( <a href="http://www.jquery.com/">http:///www.jquery.com/</a>,<a href="http://www.jquerymobile.com/">http://www.jquerymobile.com/</a>, <a href="http://www.jqueryui.com/">http://www.jqueryui.com/</a>) ; that copy right rule,<a href="https://jquery.org/license/">https://jquery.org/license/</a> ; 'The MIT License (MIT)', I show this sentence.</p>
+<p>3. I use <span style="font-style: italic;">jQuery, jQuery Mobile, JQuery UI</span>. ( <a href="http://www.jquery.com/">http:///www.jquery.com/</a>,<a href="http://www.jquerymobile.com/">http://www.jquerymobile.com/</a>, <a href="http://www.jqueryui.com/">http://www.jqueryui.com/</a>) ; <a href="https://jquery.org/license/">https://jquery.org/license/</a> ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
 <p>4. I use <span style="font-style: italic;">W3.CSS</span>. Free licence on notice this webpage  (<a href="https://www.w3schools.com/w3css/default.asp">https://www.w3schools.com/w3css/default.asp</a>).</p>
 	
 <p>5. I use <span style="font-style:italic;">gryphicon FREE</span>. (GLYPHICONS.com <a href="http://www.glyphicons.com">http://www.glyphicons.com</a>)</p>
 	
-<p>6. I use <span style="font-style:italic;">https://necolas.github.io/normalize.css/</span>. ( <a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md">https://github.com/necolas/normalize.css/blob/master/LICENSE.md</a>) ; that copy right rule,'The MIT License (MIT)', I show this sentence.</p>
+<p>6. I use Normalize.css. ; <span style="font-style:italic;">https://necolas.github.io/normalize.css/</span>. ( <a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md">https://github.com/necolas/normalize.css/blob/master/LICENSE.md</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>7. I use <span style="font-style:italic;">https://github.com/DataTables/DataTables</span>. ( <a href="https://github.com/DataTables/DataTables/blob/master/license.txt">https://github.com/DataTables/DataTables/blob/master/license.txt</a>) ; that copy right rule,'The MIT License (MIT)', I show this sentence.</p>
+<p>7. I use DataTables Table plug-in for jQuery
+; <span style="font-style:italic;">https://github.com/DataTables/DataTables</span>. ( <a href="https://github.com/DataTables/DataTables/blob/master/license.txt">https://github.com/DataTables/DataTables/blob/master/license.txt</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>8. I use <span style="font-style:italic;">https://github.com/jackmoore/zoom</span>. ( <a href="https://github.com/jackmoore/zoom/blob/master/LICENSE.md">https://github.com/jackmoore/zoom/blob/master/LICENSE.md</a>) ; that copy right rule,'The MIT License (MIT)', I show this sentence.</p>
+<p>8. I use <span style="font-style:italic;"><a href="http://www.jacklmoore.com/zoom/">http://www.jacklmoore.com/zoom/</a>, <a href="https://github.com/jackmoore/zoom">https://github.com/jackmoore/zoom</a></span>. ( <a href="https://github.com/jackmoore/zoom/blob/master/LICENSE.md">https://github.com/jackmoore/zoom/blob/master/LICENSE.md</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>9. I use <span style="font-style:italic;">https://github.com/bootflat/bootflat.github.io</span>. ( <a href="http://bootflat.github.io/">http://bootflat.github.io/</a>) ; that copy right rule,'The MIT License (MIT)', I show this sentence.</p>
+<p>9. I use Bootflat ; <span style="font-style:italic;">http://bootflat.github.io/</span>. ( <a href="https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE">https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>10. I use MySQL Community Server (GPL), link:<a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a>,I localhost developing use this tool.</p>
+<p>10. I use MySQL Community Server (GPL), notice link:<a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a>,I localhost developing use this tool.</p>
 	
 <p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>.</p>
 	
