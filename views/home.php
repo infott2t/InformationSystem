@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 <h4>8. I use <span style="font-style:italic;"><a href="http://www.jacklmoore.com/zoom/">Http://www.jacklmoore.com/zoom</a></span>.</h4>
 
-<p>This github: <a href="https://github.com/jackmoore/zoom">Https://github.com/jackmoore/zoom</a></p>
+<p>This github : <a href="https://github.com/jackmoore/zoom">Https://github.com/jackmoore/zoom</a></p>
 <p><a href="https://github.com/jackmoore/zoom/blob/master/LICENSE.md">Https://github.com/jackmoore/zoom/blob/master/LICENSE.md</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>
 	
