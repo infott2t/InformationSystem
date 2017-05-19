@@ -12,6 +12,9 @@ for example, Information System for better workplace.
 <p>2017-05-13, Starting Github on upload.</p>
 <p>2017-05-19, up Github on upload</p>
 <a href="http://ee32320.godohosting.com/index.php/welcome">InformationSystem for work ver17-2., link http address: http://ee32320.godohosting.com/index.php/welcome</a>
+<p></p>
+<p>NOW DIFFERENT WEBSITE(http://ee32320.godohosting.com/index.php/welcome/) AND GITHUB(https://www.github.com/ee32320/InformationSystem), Reason write(2017-05-19) log link, refenrece:<a href="http://ee32320.godohosting.com">http://ee32320.godohosting.com</a></p>
+<p></p>
 <h4>Share the intellectual property , throught the online, internet.</h4>
 <br/>
 
