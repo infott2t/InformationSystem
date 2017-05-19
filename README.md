@@ -73,11 +73,11 @@ for example, Information System for better workplace.
 <p>7. I use DataTables Table plug-in for jQuery
 ; <span style="font-style:italic;">https://github.com/DataTables/DataTables</span>. ( <a href="https://github.com/DataTables/DataTables/blob/master/license.txt">https://github.com/DataTables/DataTables/blob/master/license.txt</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>8. I use <span style="font-style:italic;"><a href="http://www.jacklmoore.com/zoom/">http://www.jacklmoore.com/zoom/</a>, <a href="https://github.com/jackmoore/zoom">https://github.com/jackmoore/zoom</a></span>. ( <a href="https://github.com/jackmoore/zoom/blob/master/LICENSE.md">https://github.com/jackmoore/zoom/blob/master/LICENSE.md</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
+<p>8. I use <span style="font-style:italic;"><a href="http://www.jacklmoore.com/zoom/">http://www.jacklmoore.com/zoom/</a> ; <a href="https://github.com/jackmoore/zoom">https://github.com/jackmoore/zoom</a></span>. ( <a href="https://github.com/jackmoore/zoom/blob/master/LICENSE.md">https://github.com/jackmoore/zoom/blob/master/LICENSE.md</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
 <p>9. I use Bootflat ; <span style="font-style:italic;">http://bootflat.github.io/</span>. ( <a href="https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE">https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE</a>) ; that copy right rule, 'The MIT License (MIT)', I show this sentence.</p>
 	
-<p>10. I use MySQL Community Server (GPL), notice link:<a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a>,I localhost developing use this tool.</p>
+<p>10. I use MySQL Community Server (GPL), notice link : <a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a>,I localhost developing use this tool.</p>
 	
 <p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>.</p>
 	
