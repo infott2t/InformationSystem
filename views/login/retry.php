@@ -33,13 +33,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password">
 				</div>
 			  </div>
-			  <div class="form-group">
+			  <div class="form-group" style="min-height: 140px;">
 				<div class="col-sm-offset-2 col-sm-2">
 				  <button type="submit" class="btn btn-default sub-btn">LOG IN</button> 
 				</div>
 			
 			    <div class="col-sm-8">
-					<div class="alert alert-warning" role="alert">
+			    	<div style="padding:10px;"></div>
+					<div class="alert alert-warning" role="alert" style="margin-bottom:0px;">
 						<p><span style="font-weight: bold">Wrong input.</span> Please, Try again.</p>
 					</div>
 				</div>
