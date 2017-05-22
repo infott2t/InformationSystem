@@ -1768,7 +1768,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<br/>
 						<p>Libraly Parts-3F-1,2 Maps Announce.</p>
 						<p>private reaserch room.</p>
-						<p>60 vacancy.</p>
+						<p>120,120(total 240) vacancy.</p>
 						<p>desk partrition and screen off.</p>
 						<p>person private desk.</p>
 					</div>
