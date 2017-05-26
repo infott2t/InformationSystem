@@ -38,6 +38,10 @@ class Register extends CI_Controller {
 			$this->load->model('user_info_model');
 			$result_temp=$this->user_info_model->set_user_info();
 			if($result_temp=="success"){
+				
+				$this->load->model('user_info_model');
+				$result_temp=$this->user_info_model->acti_send_user_mail();
+				
 				$this->load->view('register/registred');
 			}else{
 				$this->load->view('register/retry');

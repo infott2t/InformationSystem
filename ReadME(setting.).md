@@ -72,6 +72,10 @@
 <p>'failover' => array(),</p>
 <p>'save_queries' => TRUE</p>
 <p>);</p>
+<br/>
+<p>How to email function use.</p>
+<p>application/libralis/email.php, config writing.</p>
+<p></p>
 <h3>Thank you for watching, ReadME(setting) file.</h3>
 
  

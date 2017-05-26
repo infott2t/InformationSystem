@@ -20,29 +20,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="panel-heading"><h1>LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></h1></div>
 			<div class="panel-body panel-hover">
 			<p>&nbsp;</p>
-<?php echo form_open('login/signin','class="form-horizontal"') ?>
+<?php echo form_open('login/activation','class="form-horizontal"') ?>
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10">
-				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" value="<?php echo set_value('email'); ?>">
+				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" disabled="disabled" value="<?php echo set_value('email'); ?>">
 				</div>
 			  </div>
 			  <div class="form-group">
 				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
 				<div class="col-sm-10">
-				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password">
+				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password" disabled="disabled">
 				</div>
 			  </div>
 			  <div class="form-group" style="min-height: 140px;">
-				<div class="col-sm-offset-2 col-sm-2">
-				  <button type="submit" class="btn btn-default sub-btn">LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></button> 
+				<div class="col-sm-offset-2 col-sm-3">
+				  <button type="submit" class="btn btn-default sub-btn">Send Activation Email&nbsp;<span class="glyphicon glyphicon-log-in"></span></button> 
 				</div>
 			
-			    <div class="col-sm-8" style="height:110px;">	
+			    <div class="col-sm-7" style="height:110px;">	
 					<div style="padding: 10px;"></div>
-					<div class="alert alert-warning" role="alert">
+					<div class="alert alert-info" role="alert">
 						<p><span class="glyphicon glyphicon-info-sign"></span></p>
-						<p>Wronged input. Please, Check id or password.</p>
+						<p>Need a Activation. Click and Activationing, throught Now sending Email.</p>
+						<p><span class="glyphicon glyphicon-alert"></span>&nbsp;Will, Recorded Information, Resetting.</p>
 					</div>
 				</div>
 			  </div>
@@ -50,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			 <div style="padding: 10px;"></div>
 			 <div class="col col-sm-10"></div>
 			   <div class="col col-sm-2">
-			   <a role="button" href="/index.php/login/forget/form" class="btn btn-default sub-btn">Forgot Password&nbsp;<span class="glyphicon glyphicon-question-sign"></span></a> 
+			   <!--<a role="button" href="/index.php/login/forget/form" class="btn btn-default sub-btn">Forgot Password&nbsp;<span class="glyphicon glyphicon-question-sign"></span></a> -->
 			   </div>	 
 		  </div>
  		</div>
@@ -139,8 +140,11 @@ $('.sub-btn').click(function(){
 
 </script>
 <script>
-	 
+$(document).ready(function(){
+	alert(('#inputEmail3').val());
+});	 
 </script>
 </body>
 </html>
+
 

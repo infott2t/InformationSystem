@@ -1667,7 +1667,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   			</div>
   			<div class="panel-body">
 				<p>1B~3F. 4Floors.</p>
-		  		<p>Learning, Researching, Planning, Meeting, Info trans and Meal room.</p>	
+		  		<p>Learning, Researching, Planning, Meeting, Info trans and Meal room.</p>
+		  		<p>Enjoy, Leisure time.</p>	
   			</div>
 		</div>
 		<div class="container-fluid">
@@ -1768,7 +1769,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<br/>
 						<p>Libraly Parts-3F-1,2 Maps Announce.</p>
 						<p>private reaserch room.</p>
-						<p>60 vacancy.</p>
+						<p>120, 120(total 240) vacancy.</p>
 						<p>desk partrition and screen off.</p>
 						<p>person private desk.</p>
 					</div>

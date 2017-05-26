@@ -15,57 +15,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body style="background-color:#2c3e50;">
 
- 	
  		<div class="panel panel-default">
 			<div class="panel-heading"><h1>LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></h1></div>
 			<div class="panel-body panel-hover">
 			<p>&nbsp;</p>
-<?php echo form_open('login/signin','class="form-horizontal"') ?>
+<?php echo form_open('login/forget/sending','class="form-horizontal"') ?>
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10">
-				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" value="<?php echo set_value('email'); ?>">
+				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
 				</div>
 			  </div>
-			  <div class="form-group">
-				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				<div class="col-sm-10">
-				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password">
-				</div>
-			  </div>
-			  <div class="form-group" style="min-height: 140px;">
-				<div class="col-sm-offset-2 col-sm-2">
-				  <button type="submit" class="btn btn-default sub-btn">LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></button> 
-				</div>
 			
-			    <div class="col-sm-8" style="height:110px;">	
-					<div style="padding: 10px;"></div>
-					<div class="alert alert-warning" role="alert">
-						<p><span class="glyphicon glyphicon-info-sign"></span></p>
-						<p>Wronged input. Please, Check id or password.</p>
-					</div>
+			  <div class="form-group" style="min-height: 140px;">
+				<div class="col-sm-offset-2 col-sm-3">
+				  <button type="submit" class="btn btn-default sub-btn">Send Password</button> 
+				  
 				</div>
-			  </div>
-			</form>
-			 <div style="padding: 10px;"></div>
-			 <div class="col col-sm-10"></div>
-			   <div class="col col-sm-2">
-			   <a role="button" href="/index.php/login/forget/form" class="btn btn-default sub-btn">Forgot Password&nbsp;<span class="glyphicon glyphicon-question-sign"></span></a> 
-			   </div>	 
+				 
+					<div class="col-sm-7">
+					<div style="padding: 10px;"></div>
+					<div class="alert alert-info" role="alert">
+						<p><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Send password, your email.</p>
+					</div>
+					</div>
+			   </div>
+			</form>	 
 		  </div>
  		</div>
- 	
- 	
  		<div class="panel panel-default">
-			<div class="panel-heading"><h3>Registry.</h3></div>
+			<div class="panel-heading"><h3>Forgot password</h3></div>
 			<div class="panel-body">
 				<p>Guest, join us.</p>
 				<p>This part, Under the Construnction.</p>
 			</div>
  		</div>	
  	
-<div id="status" style="display:none;"><?=status?></div>
-<div id="change" style="display:none;"><?=change?></div>
+
+<div style="display:none;" id="change"><?=$change?></div>
+<div style="display:none;" id="status"><?=$status?></div>
 <div style="padding:10px;"></div>
 <div style="padding:10px;"></div>
 <div style="background-color: #25292D;color:white;padding-top:150px;padding-left:10px;">
@@ -127,20 +115,23 @@ $('.panel-hover').hover(function(){
 	if($('.sub-btn').hasClass('btn-primary')){}else{
 	$('.sub-btn').addClass('btn-info');}
 });
+
 $('.sub-btn').hover(function(){
 	if($(this).hasClass('btn-primary')){}else{
-	$(this).addClass('btn-info');}
+	$(this).addClass('btn-info');
+	}
 });
 $('.sub-btn').click(function(){
 	$(this).removeClass('btn-info');
 	$(this).addClass('btn-primary');
-	
 });
-
 </script>
 <script>
-	 
+$(document).ready(function(){
+	alert($('#status').text());
+});	
 </script>
 </body>
 </html>
+
 

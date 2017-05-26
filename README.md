@@ -106,11 +106,12 @@ for example, Information System for better workplace.
 <h4>9. I use <span style="font-style:italic;">Bootflat</span>. (<a href="http://bootflat.github.io/">Http://bootflat.github.io</a>)</h4>
 <p><a href="https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE">Https://github.com/bootflat/bootflat.github.io/blob/master/LICENSE</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>	
-
 <h4>10. I use MySQL Community Server (GPL).</h4>
 <p>Notice this link : <a href="https://dev.mysql.com/downloads/">Https://dev.mysql.com/downloads</a></p>
 <p>I localhost developing use this tool.</p>
 <br/>
+<h4>11. I use <span style="font-style:italic;">JQuery Validation Plugin</span>. (<a href="https://jqueryvalidation.org/">https://jqueryvalidation.org/</a>)</h4>
+<p><a href="https://github.com/jquery-validation/jquery-validation/blob/master/LICENSE.md">https://github.com/jquery-validation/jquery-validation/blob/master/LICENSE.md</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>
 <h4>This webpage, write day : 2017-05-19</h4>
 <br/>

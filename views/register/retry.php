@@ -20,14 +20,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  		<div class="panel panel-default">
 			<div class="panel-heading"><h1>Registration&nbsp;<span class="glyphicon glyphicon-briefcase"></span></h1></div>
 			<div class="panel-body">
-			 
+			<p>&nbsp;</p> 
 <?php echo validation_errors(); ?>
 <?php echo form_open('register/create','class="form-horizontal"') ?>
 			 
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10">
-				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" value="<?php echo set_value('email'); ?>">
 				</div>
 			  </div>
 			  <div class="form-group">
@@ -48,18 +48,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			  <div class="form-group">
 				<label for="inputName" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
-				  <input type="text" name="name" class="form-control" id="inputNmae" placeholder="Name">
+				  <input type="text" name="name" class="form-control" id="inputNmae" placeholder="Name" value="<?php echo set_value('name'); ?>">
 				</div>
 			  </div>
 			  <div class="form-group">
 				<div class="col-sm-offset-2 col-sm-3" style="padding-bottom:20px;">
-				  <button type="submit" class="btn btn-default btn-sub">Registration</button> 
+				  <button type="submit" class="btn btn-default btn-sub">Registration&nbsp;<span class="glyphicon glyphicon-briefcase"></span></button> 
 				</div>
-				<div class="col-sm-7">
-			 <div class="alert alert-warning" role="alert">
-			<p><span style="font-weight: bold">May be who use id, or wrong input.</span> Please, Retry registration.</p>
-			</div>
-			</div>
+				<div style="padding:10px;"></div>
+	 			<div class="col-sm-7">
+			 	<div class="alert alert-info" role="alert" style="height:140px;">
+					<p><span class="glyphicon glyphicon-info-sign"></span>&nbsp;May be who use id, or wrong input.</span> Please, Retry registration.</p>
+				</div>
+				</div>
 			  </div>
 			</form>	 
 		  </div>

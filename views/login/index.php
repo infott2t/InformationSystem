@@ -16,14 +16,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body style="background-color:#2c3e50;">
 
  		<div class="panel panel-default">
-			<div class="panel-heading"><h1>LOG IN</h1></div>
+			<div class="panel-heading"><h1>LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></h1></div>
 			<div class="panel-body panel-hover">
 			<p>&nbsp;</p>
 <?php echo form_open('login/signin','class="form-horizontal"') ?>
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10">
-				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" value="<?php echo set_value('email');?>">
 				</div>
 			  </div>
 			  <div class="form-group">
@@ -33,21 +33,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			  </div>
 			  <div class="form-group" style="min-height: 140px;">
-				<div class="col-sm-offset-2 col-sm-2">
-				  <button type="submit" class="btn btn-default sub-btn">LOG IN</button> 
+				<div class="col-sm-offset-2 col-sm-3">
+				  <button type="submit" class="btn btn-default sub-btn">LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></button> 
+				  
 				</div>
 				  <?php if(validation_errors()==""):?>
-
+					<div class="col-sm-7" style="height:110px;">
+			  			<p>&nbsp;</p>
+				  	</div>
 					<?php else : ?>
-					<div class="col-sm-8">
+					<div class="col-sm-7" style="height:110px;">
 					<div style="padding: 10px;"></div>
-					<div class="alert alert-warning" role="alert">
-						<?php echo validation_errors()?>
+					<div class="alert alert-info" role="alert">
+						<p><span class="glyphicon glyphicon-info-sign"></span></p><?php echo validation_errors()?>
 					</div>
-					</div>
+				  </div>
 					<?php endif; ?> 
 			   </div>
-			</form>	 
+			</form>
+			 <div style="padding: 10px;"></div>
+			 <div class="col col-sm-10"></div>
+			   <div class="col col-sm-2">
+			   <a role="button" href="/index.php/login/forget/form" class="btn btn-default sub-btn">Forgot Password&nbsp;<span class="glyphicon glyphicon-question-sign"></span></a> 
+			</div>
+			 
 		  </div>
  		</div>
  	

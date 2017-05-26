@@ -55,5 +55,6 @@ $route['whereinformation'] = 'whereinformation';
 $route['diarly'] = 'diarly';
 $route['claime'] = 'claime';
 $route['planning'] = 'planning';
+$route['activation'] = 'activation';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

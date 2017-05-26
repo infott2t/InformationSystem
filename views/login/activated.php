@@ -14,78 +14,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 
 <body style="background-color:#2c3e50;">
-
-		<div class="panel panel-default">
-			<div class="panel-heading"><h1>LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></h1></div>
+ 		<div class="panel panel-default">
+		  <div class="panel-heading"><h1>LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></h1></div>
 			<div class="panel-body panel-hover">
- 			<div class="row">
-				<div class="col col-sm-6" style="padding-bottom:10px;">
-				<div class="alert alert-info" style="margin-bottom:5px;margin-top:5px;" role="alert">
-					<h4>Deleted, ID.</h4>
-					<h4></h4>
+				 
+				 <div class="alert alert-info" role="alert">
+					 <h4>Sendding Activation email.</h4>
+					<h4>Please Check your email, and Activatig on. Thank you.</h4> 
+					<br/> 
 					<br/>
-				</div>
-				</div>
-			<div class="col col-sm-6"  style="padding-bottom:10px;">
-			
-			<div class="row">
-			<div class="col col-sm-6">
-			<a role="button" href="#" disabled="disabled" class="str-btn btn btn-default log-btn">LOG OUT&nbsp;<span class="glyphicon glyphicon-log-out"></span></a>
-			<a role="button" class="str-btn btn btn-default log-btn" disabled="disabled" id="info-btn">User Information&nbsp;<span class="glyphicon glyphicon-user"></span></a>
-			</div>
-			<div class="col col-sm-6">
-			<a role="button" class="str-btn btn btn-default sub-btn" disabled="disabled" id="fix-btn">Fix ID information&nbsp;<span class="glyphicon glyphicon-edit"></a>
-			<a role="button" class="str-btn btn btn-default sub-btn" disabled="disabled" id="reset-btn">Reset Password&nbsp;<span class="glyphicon glyphicon-refresh"></span></a>
-			<a role="button" class="str-btn btn btn-default del-btn" disabled="disabled" id="del-btn">Delete ID&nbsp;<span class="glyphicon glyphicon-trash"></span></a>
-			</div>
-			</div> 
-			</div>
-			</div>
-			
-	
-			
-			<div class="log log-delete" style="display:none;">
-			<div class="alert alert-success" role="alert" style="margin-top:5px;">
-  			<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-  			<span class="sr-only">Alert:</span>
- 			 Deleting ID. Complete.
-			</div>
-		
-			<div class="row">
-			<div class="col col-sm-2"></div>
-			<div class="col col-sm-8">
-				<?php echo form_open('login/change/delete','class="form-horizontal"  onsubmit="return validateDeleteIdForm();"') ?>
-				<div class="form-group">
-			
-				<div class="col col-sm-6">
-				<label for="input-del-useremail">User EMAIL</label>
-				<input type="text" id="input-del-useremail" class="form-control" value="" disabled="disabled">
-				<div style="padding:10px 0px;"></div>
-				<label for="input-del-email">User EMAIL</label>
-				<input type="email" id="input-del-email" name="delemail" class="form-control" placeholder="Write Email">
-				<div style="padding:10px 0px;"></div>
-				<label for="input-del-password">Password</label>
-				<input type="password" id="input-del-password" name="delpw" class="form-control" placeholder="Write Password">
-				</div> 
-				<div class="col col-sm-6">
-				<br/>
-				<button type="submit" class="btn btn-danger sub-btn" disabled="disabled" href="">DELETE</button>
-				<div style="padding:15px;"></div> 
-					<div id="alert-deleteId" class="alert alert-warning log-alert" role="alert" style="display:none;height:90px;margin-bottom: 0px;">
-							<p><span class="glyphicon glyphicon-alert"></span>&nbsp;&nbsp;Please, Check a inputs.</p>
-					</div>
-				</div>
-		
-				</div>
-			</div>
-			</form>
-			</div>
-			<div class="col col-sm-2"></div>
-		
-			</div>
-			</div>		
+				</div>	
+				  
+			 
 		  	</div>
- 
+ 		
  	
   	
  		<div class="panel panel-default">
@@ -121,7 +63,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a class="navbar-brand" href="#">Information system for work</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       
+       <?php if($this->session->userdata('logged_in')):?>
+		  <ul class="nav navbar-nav">
+			<li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
+			<ul class="dropdown-menu">
+				<li style="padding: 5px 0px;"><a href="/index.php/welcome">Welcome</a></li>
+				<li><a href='/index.php/login/'><?=$this->session->userdata('useremail')?></a></li>
+			</ul>
+			</li>
+			<li><a href="/index.php/whereInformation/">Where information</a></li>
+			  <li><a href="/index.php/planning/">Planning</a></li>
+			<li><a href="/index.php/claime/">Claime</a></li>
+			<li><a href="/index.php/diarly/">Diarly</a></li>
+		  </ul>
+	   <?php else : ?>
 		  <ul class="nav navbar-nav">
 			<li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
 			<ul class="dropdown-menu">
@@ -135,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<li><a href="/index.php/claime/">Claime</a></li>
 			<li><a href="/index.php/diarly/">Diarly</a></li>
 		  </ul>
-	
+	   <?php endif; ?>
        <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Link <span class="caret"></span></a>
@@ -314,7 +269,36 @@ $(document).ready(function(){
 	var change = $('#change-redirectAfter').text();
 	var status = $('#status-redirectAfter').text();
 	
-	
+	if(change=="name"){
+		$('.sub-btn').addClass('btn-info');
+		$('#fix-btn').removeClass('btn-info').addClass('btn-primary');
+		$('.log-fix').css('display','block');
+		$('#alert-name p').remove();
+		$('#alert-name').append($("<p><span class='glyphicon glyphicon-info-sign'></span>&nbsp;&nbsp;Name Changed.</p>"));
+		$('#alert-name').removeClass('alert-warning').addClass('alert-success');
+		$('#alert-name').css("display","block");
+		//<p><span class="glyphicon glyphicon-alert"></span>&nbsp;&nbsp;Please, input name.</p>
+	}
+	if(change=="password"){
+		if(status=="error-password"){
+		$('.sub-btn').addClass('btn-info');
+		$('#reset-btn').removeClass('btn-info').addClass('btn-primary');
+		$('.log-reset').css('display','block');
+		$('#alert-password p').remove();
+		$('#alert-password').append($("<p><span class='glyphicon glyphicon-alert'></span>&nbsp;&nbsp;Wrong password. Please Check, password.</p>"));
+		$('#alert-password').removeClass('alert-success').addClass('alert-warning');
+		$('#alert-password').css("display","block");
+		}
+		if(status=="success"){
+		$('.sub-btn').addClass('btn-info');
+		$('#reset-btn').removeClass('btn-info').addClass('btn-primary');
+		$('.log-reset').css('display','block');
+		$('#alert-password p').remove();
+		$('#alert-password').append($("<p><span class='glyphicon glyphicon-info-sign'></span>&nbsp;&nbsp;Password Changed.</p>"));
+		$('#alert-password').removeClass('alert-warning').addClass('alert-success');
+		$('#alert-password').css("display","block");
+		}
+	}
 	if(change=="deleteId"){
 		if(status=="error-deleteId"){
 		$('.sub-btn').addClass('btn-info');
@@ -341,4 +325,5 @@ $(document).ready(function(){
 </script>
 </body>
 </html>
+
 

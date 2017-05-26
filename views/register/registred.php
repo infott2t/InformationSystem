@@ -21,7 +21,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="alert alert-info" role="alert">
 				<h4>Registration, Complete.</h4> 
 				<br/> 
- 				<h4><a href="/index.php/login/" class="alert-link">LOG IN</a> BY <span style="font-style: italic;"><?php echo $_SESSION['useremail']?></span>.</h4>
+				<h4>Thank you!</h4>
+ 				<h4>Check your email, <span style="font-style: italic;"><?php echo $_SESSION['useremail']?></span>.</h4>
+ 				<h4>After, please, Activating log.</h4>
  				<br/>
 				</div>
  				
@@ -67,7 +69,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <ul class="dropdown-menu">
             <li><a href="../welcome/">Welcome</a></li>
             <li><a href="../login/">LOG IN</a></li>
-            <li><a href="#">Register</a></li>
         </ul>
         </li>
         <li><a href="/index.php/whereInformation/">Where Information</a></li>
