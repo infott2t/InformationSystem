@@ -74,8 +74,8 @@
 <p>);</p>
 <br/>
 <h3>5. How to email function use.</h3>
-<p>application/libralis/email.php, config writing.</p>
-<p></p>
+<p>system/libraries/email.php, config writing.</p>
+<p>and, /application/models/user_info_model.php,  start that, 329 line~, 619 line~, rewritting.</p>
 <br/>
 <h3>Thank you for watching, ReadME(setting) file.</h3>
 

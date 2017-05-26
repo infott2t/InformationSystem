@@ -443,14 +443,6 @@ class User_info_model extends CI_Model {
 	{
 	  
 		$temp_result="";
-		//$this->db->where('user_email',$temp_chkEmail);
-		//$temp_key = hash('sha512',md5($temp_email));
-	/*$query = $this->db->get();
-		$temp_maxid;
-		foreach($query->result_array() as $row)
-		{
-			$temp_maxid=$row['user_id'];
-		}*/	 
 		$this->db->where('md5key',$value);
 		$this->db->from('user_info');
 		$query=$this->db->get();
@@ -480,11 +472,42 @@ class User_info_model extends CI_Model {
 		$data = array(
 			'is_activation' => TRUE
 			);
+			$this->db->where('user_email',$temp_useremail);
+			$this->db->where('is_activation',TRUE);
+			$this->db->from('user_info');
+			$query = $this->db->get();
+			if($query->num_rows()>0){
+				$temp_result="false";
+			}else{
 		
 			$this->db->where('user_email',$temp_useremail);
 			$this->db->where('md5key',$value);
 			$query = $this->db->update('user_info', $data);
 			$temp_result="success";
+			}
+		}
+		return $temp_result;
+	}
+	public function chk_key_activation_off($value)
+	{
+		$this->db->where('md5key',$value);
+		$this->db->where('is_activation',TRUE);
+		$this->db->from('user_info');
+		$query = $this->db->get();
+		
+		if($query->num_rows()>0){
+			$temp_result="false";
+		}else{
+			
+			$this->db->where('md5key',$value);
+			$query= $this->db->delete('user_info');
+			if($this->db->affected_rows() > 0){
+		 
+			$temp_result="success";
+			}else{
+				$temp_result="false";
+			}
+		 
 		}
 		return $temp_result;
 	}

@@ -163,37 +163,26 @@ class Login extends CI_Controller {
 		if($value=="name")
 		{
 			$this->load->helper('form');
-			$this->load->library('form_validation');
-			$this->form_validation->set_rules('changeName', 'changeName', 'required');
 			
-			if ($this->form_validation->run() === FALSE)
-			{
-				
-			$data['change'] = "name";
-			$data['status'] = "normal";
-			$this->load->view('login/signed',$data);
-			
-
-			}else{
 			$this->load->model('user_info_model');
 			$result_temp=$this->user_info_model->set_user_info_name();
 			
 			if($result_temp=="success"){
 				 
 			$data['change'] = "name";
-			$data['status'] = "normal";
+			$data['status'] = "success";
 			//$this->load->view('login/signed',$data);
 			}
 			$this->load->view('login/signed',$data);
-			}
-			
-			
+		
 		}
 		if($value=="password")
 		{
+			$this->load->helper('form');
+			
 			$this->load->model('user_info_model');
 			$result_temp=$this->user_info_model->set_user_info_password();
-			 
+
 			if($result_temp=="success"){
 				$data['change'] = "password";
 				$data['status'] = "success";
@@ -204,9 +193,11 @@ class Login extends CI_Controller {
 				$data['status'] = "error-password";
 				$this->load->view('login/signed',$data);
 			}
+		
 		}
 		if($value=="delete")
 		{
+			$this->load->helper('form');
 			$this->load->model('user_info_model');
 			$result_temp=$this->user_info_model->set_user_info_delete_id();
 			

@@ -67,8 +67,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <ul class="nav navbar-nav">
         <li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
         <ul class="dropdown-menu">
-            <li><a href="../welcome/">Welcome</a></li>
-            <li><a href="../login/">LOG IN</a></li>
+            <li><a href="/index.php/welcome/">Welcome</a></li>
+            <li><a href="/index.php/login/">LOG IN</a></li>
         </ul>
         </li>
         <li><a href="/index.php/whereInformation/">Where Information</a></li>
@@ -77,22 +77,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      	<li><a href="/index.php/diarly/">Diarly</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-left">
-      	<li><p>This website, Under the Construction. VERSION 17-2.</p></li>
-      </ul>
-     <!-- <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>-->
-       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About This, Information System for work, development Link <span class="caret"></span></a>
+      	 <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Link <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <li><p>This website, Under the Construction. VERSION 17-2.</p></li>
             <li><a href="https://github.com/ee32320/InformationSystem">Move a github</a></li>
           </ul>
         </li>
       </ul>
+     
+        
       
     </div><!-- /.navbar-collapse -->
       

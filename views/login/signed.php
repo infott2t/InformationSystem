@@ -100,13 +100,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<br/>
 				<button type="submit" class="btn btn-info sub-btn" href="">Change&nbsp;<span class="glyphicon glyphicon-edit"></span></button>
 				<div style="padding:15px;"></div>
-				 	<?php if(validation_errors()==""):?>
-	
-				<?php else : ?>
 	 			<div id="alert-name" class="alert alert-warning log-alert" role="alert" style="height:60px;margin-bottom: 0px;">
 							<p><span class="glyphicon glyphicon-alert"></span>&nbsp;&nbsp;Please, input name.</p>
 				</div>
-				<?php endif; ?>
+			
 					
 					
 				</div>
@@ -243,20 +240,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a class="navbar-brand" href="#">Information system for work</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       <?php if($this->session->userdata('logged_in')):?>
-		  <ul class="nav navbar-nav">
-			<li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
-			<ul class="dropdown-menu">
-				<li style="padding: 5px 0px;"><a href="/index.php/welcome">Welcome</a></li>
-				<li><a href='/index.php/login/'><?=$this->session->userdata('useremail')?></a></li>
-			</ul>
-			</li>
-			<li><a href="/index.php/whereInformation/">Where information</a></li>
-			  <li><a href="/index.php/planning/">Planning</a></li>
-			<li><a href="/index.php/claime/">Claime</a></li>
-			<li><a href="/index.php/diarly/">Diarly</a></li>
-		  </ul>
-	   <?php else : ?>
+     
 		  <ul class="nav navbar-nav">
 			<li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
 			<ul class="dropdown-menu">
@@ -270,7 +254,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<li><a href="/index.php/claime/">Claime</a></li>
 			<li><a href="/index.php/diarly/">Diarly</a></li>
 		  </ul>
-	   <?php endif; ?>
+	  
        <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Link <span class="caret"></span></a>
@@ -452,6 +436,7 @@ $(document).ready(function(){
 	var status = $('#status-redirectAfter').text();
 	
 	if(change=="name"){
+		if(status=="success"){
 		$('.sub-btn').addClass('btn-info');
 		$('#fix-btn').removeClass('btn-info').addClass('btn-primary');
 		$('.log-fix').css('display','block');
@@ -460,8 +445,18 @@ $(document).ready(function(){
 		$('#alert-name').removeClass('alert-warning').addClass('alert-success');
 		$('#alert-name').css("display","block");
 		//<p><span class="glyphicon glyphicon-alert"></span>&nbsp;&nbsp;Please, input name.</p>
+		}
 	}
 	if(change=="password"){
+		if(status=="success"){
+		$('.sub-btn').addClass('btn-info');
+		$('#reset-btn').removeClass('btn-info').addClass('btn-primary');
+		$('.log-reset').css('display','block');	
+		$('#alert-password p').remove();
+		$('#alert-password').append($("<p><span class='glyphicon glyphicon-alert'></span>&nbsp;&nbsp;Password Changed.</p>"));
+		$('#alert-password').removeClass('alert-warning').addClass('alert-success');
+		$('#alert-password').css("display","block");	
+		}
 		if(status=="error-password"){
 		$('.sub-btn').addClass('btn-info');
 		$('#reset-btn').removeClass('btn-info').addClass('btn-primary');
@@ -471,7 +466,7 @@ $(document).ready(function(){
 		$('#alert-password').removeClass('alert-success').addClass('alert-warning');
 		$('#alert-password').css("display","block");
 		}
-		if(status=="success"){
+		if(status=="nouse"){
 		$('.sub-btn').addClass('btn-info');
 		$('#reset-btn').removeClass('btn-info').addClass('btn-primary');
 		$('.log-reset').css('display','block');

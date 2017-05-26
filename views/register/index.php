@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="panel-body">
 				<p>&nbsp;</p>
 
-<?php echo form_open('register/create','class="form-horizontal"') ?>
+<?php echo form_open('register/create','class="form-horizontal" id="Form"') ?>
 			  
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -33,13 +33,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			  <div class="form-group">
 				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
 				<div class="col-sm-10">
-				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password">
+				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password"  minlength="2">
 				  <div style="padding:5px 0px;"></div>
 				</div>
 				
 				<label for="inputPassword4" class="col-sm-2 control-label"></label>
 				<div class="col-sm-10">
-				  <input type="password" name="pw2" class="form-control" id="inputPassword4" placeholder="Rewrite, Password">
+				  <input type="password" name="pw2" class="form-control" id="inputPassword4" placeholder="Rewrite, Password"  minlength="2">
 				</div>
 			  </div>
 			  <div class="col-sm-offset-1 col-sm-11">
@@ -139,6 +139,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--basic template -->
 <script src="/views/js/bootstrap.min.js"></script>	
+<script src="/views/js/jquery.validate.js"></script>	
 <script>
 	$('.panel').addClass('panel-info')
 	$('.panel-heading').css('background-color','#25292D').css('color','white');
@@ -149,6 +150,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$(this).removeClass('btn-info');
 		$(this).addClass('btn-primary');
 	});
+	$("#Form").validate();
 </script>
 </body>
 </html>

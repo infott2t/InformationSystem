@@ -47,7 +47,7 @@ class Activation extends CI_Controller {
 	 
 	public function getKey($value){
 		//echo $value;
-		$this->load->helper('form'); 
+	 
 		$data['activationKey'] = $value;
 		$this->load->model('user_info_model');
 		$result_temp=$this->user_info_model->chk_key_activation_on($value);
@@ -63,10 +63,23 @@ class Activation extends CI_Controller {
 			$this->load->view('activation/form',$data);	
 			}
 		}else{
-			$data['result']="Activation Fail.";
+			$data['result']="Activating in, or It's a before key. No handling. Now a time. Thank you.";
 		$this->load->view('activation/index',$data); 	 
 		}
 	}
  
+	public function delKey($value){
+		
+		$data['activationKey'] = $value;
+		$this->load->model('user_info_model');
+		$result_temp=$this->user_info_model->chk_key_activation_off($value);
+		if($result_temp=="success"){
+			$data['result']="Deleting ID, Deactivation Complete.";
+			$this->load->view('activation/off',$data); 	 
+		}else if($result_temp=="false"){
+			$data['result']="It's a before key. No handling. Now a time. Thank you.";
+			$this->load->view('activation/off',$data); 	
+		}
+	}
 	 
 }
