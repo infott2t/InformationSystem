@@ -116,7 +116,7 @@ for example, Information System for better workplace.
 <h4>This webpage, write day : 2017-05-19</h4>
 <br/>
 <p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>.</p>
-<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href="https://github.com/ee32320/InformationSystem/blob/master/License.md">https://github.com/ee32320/InformationSystem/blob/master/License.md</a> ; MIT</p>
+<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href=" https://github.com/ee32320/InformationSystem/blob/master/LICENSE"> https://github.com/ee32320/InformationSystem/blob/master/LICENSE</a> ; MIT</p>
 <p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> ; CC BY 4.0</p>
 <br/> 
 
