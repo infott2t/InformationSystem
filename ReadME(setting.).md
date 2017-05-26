@@ -73,7 +73,7 @@
 <p>'save_queries' => TRUE</p>
 <p>);</p>
 <br/>
-<h3>4. How to email function use.</h3>
+<h3>5. How to email function use.</h3>
 <p>application/libralis/email.php, config writing.</p>
 <p></p>
 <br/>
