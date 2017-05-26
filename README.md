@@ -113,10 +113,14 @@ for example, Information System for better workplace.
 <h4>11. I use <span style="font-style:italic;">JQuery Validation Plugin</span>. (<a href="https://jqueryvalidation.org/">https://jqueryvalidation.org/</a>)</h4>
 <p><a href="https://github.com/jquery-validation/jquery-validation/blob/master/LICENSE.md">https://github.com/jquery-validation/jquery-validation/blob/master/LICENSE.md</a> : That copyright rule, 'The MIT License (MIT)', I show this sentence.</p>
 <br/>
-<h4>This webpage, write day : 2017-05-19</h4>
+<h4>This webpage, write day : 2017-05-26</h4>
 <br/>
 <p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>.</p>
+<<<<<<< HEAD
 <p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href=" https://github.com/ee32320/InformationSystem/blob/master/LICENSE"> https://github.com/ee32320/InformationSystem/blob/master/LICENSE</a> ; MIT</p>
+=======
+<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href="https://github.com/ee32320/InformationSystem/blob/master/LICENSE">https://github.com/ee32320/InformationSystem/blob/master/LICENSE</a> ; MIT</p>
+>>>>>>> d94fdca4e6c38d426f3c9e08e57a4a3c4f44ee20
 <p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> ; CC BY 4.0</p>
 <br/> 
 
