@@ -86,11 +86,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <br/>
 
 <br/>
-<h4>This webpage, write day : 2017-05-19</h4>
+<h4>This webpage, write day : 2017-05-26</h4>
 <br/>
+<p>I use, <a href="https://github.com/ee32320/InformationSystem">Github</a>,<a href="https://twitter.com/eecncn_choi">Twitter</a>.</p>
 <p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>.</p>
-<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem">Github</a>, <a href="https://github.com/ee32320/InformationSystem/blob/master/LICENSE">MIT</a></p>
-<p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+
+<p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem/blob/master/LICENSE"> https://github.com/ee32320/InformationSystem/blob/master/LICENSE</a> ; MIT</p>
+
+<p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> ; CC BY 4.0</p>
 <br/> 
 
 <br/>
