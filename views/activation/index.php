@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="container-fluid">
 		<div class="row" style="background-color:#2c3e50;">
 			<div class="col col-sm-12" style="padding:10px;">
-				<a role="button" class="btn btn-md btn-info btn-block" href="/index.php/login/">SIGN IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></a>
+				<a role="button" class="btn btn-md btn-info btn-block" href="/index.php/login/">Now Signed&nbsp;<span class="glyphicon glyphicon-log-in"></span></a>
 			</div>
 		</div>
 	</div>

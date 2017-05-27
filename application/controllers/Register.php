@@ -6,7 +6,7 @@ class Register extends CI_Controller {
 	public function __construct()
     {
     	parent::__construct();
-       
+        $this->load->library('session');
     }
 	
 	public function index()
@@ -48,6 +48,42 @@ class Register extends CI_Controller {
 			} 
 			
 		}
+	}
+	
+	public function create_again()
+	{
+		$this->load->helper('form');
+		$this->load->library('form_validation');
+
+		$this->form_validation->set_rules('name', 'name', 'required');
+		$this->form_validation->set_rules('pw', 'password', 'required');
+		 
+		
+		if ($this->form_validation->run() === FALSE)
+		{
+			$this->load->view('register/reform');
+		}
+		else
+		{
+			$this->load->model('user_info_model');
+			$result_temp=$this->user_info_model->set_user_info();
+			if($result_temp=="success"){
+				
+				$this->load->model('user_info_model');
+				$result_temp=$this->user_info_model->acti_send_user_mail();
+				
+				$this->load->view('register/registred');
+			}else{
+				$this->load->view('register/retry');
+			} 
+			
+		}
+	}
+	
+	public function reform()
+	{
+		$this->load->helper('form');
+		$this->load->view('register/reform');
 	}
 	
 	public function registred()

@@ -131,21 +131,63 @@ class Login extends CI_Controller {
 		if($var1=="sending"){
 		$this->load->helper('form');
 		$this->load->library('form_validation');
+		$this->load->helper('url');
+			
 			
 		$data['change'] = "sending";
 		$data['status'] = "normal";
 		
 		$this->load->model('user_info_model');
 		$result_temp=$this->user_info_model->chk_send_user_mail();
-
-			if($result_temp=="success"){
+			
+		if($result_temp=="activation_on"){
+			
+			$data['change'] = "none";
+			$data['status'] = "none";
+			$this->load->view('login/forget_activationOn',$data);
+			
+		}else if($result_temp=="activation_off"){
+			
+			$this->load->view('login/forget_activationOff');
+		}else{
+			$this->load->view('login/forget_activationNone');
+		}
+		 
+			/*if($result_temp=="success"){
 			$data['status'] = "success"; 
 			$this->load->view('login/forget',$data);	
 			}
 			if($result_temp=="email-error"){
 			$data['status'] = "email-error"; 	
 			$this->load->view('login/forget',$data);	
+			}*/
+		}
+		if($var1=="activationOn"){
+			$this->load->helper('form');
+			$this->load->helper('url');
+			$temp_input_email = $this->input->post('email');
+			$temp_save_email = $this->session->userdata('tempemail');
+			if($temp_input_email == $temp_save_email){
+				$this->load->model('user_info_model');
+				$result_temp=$this->user_info_model->resset_password();
+				
+				if($result_temp=="success"){
+					
+					$this->load->view('login/forget_password_complete');
+					
+				}else if($result_temp=="false"){
+					
+					$this->load->view('login/forget_password_failed');
+					
+				}else{
+					$this->load->view('login/forget_password_failed');
+				}
+				
+			}else{
+				
+				$this->load->view('login/forget_activationNotMatch');
 			}
+			
 		}
 	}
 	

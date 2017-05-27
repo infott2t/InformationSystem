@@ -19,24 +19,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="panel-heading"><h1>LOG IN&nbsp;<span class="glyphicon glyphicon-log-in"></span></h1></div>
 			<div class="panel-body panel-hover">
 			<p>&nbsp;</p>
-<?php echo form_open('login/forget/sending','class="form-horizontal" id="Form"') ?>
+	 <form class="form-horizontal">
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				<div class="col-sm-10" style="height:71px;">
-				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+				  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" readonly value="<?=$this->session->userdata('tempemail')?>">
 				</div>
 			  </div>
 			
 			  <div class="form-group" style="min-height: 140px;">
 				<div class="col-sm-offset-2 col-sm-3">
-				  <button type="submit" class="btn btn-default sub-btn">Check Email&nbsp;<span class="glyphicon glyphicon-check"></span></button> 
+				  <a href="/index.php/register/reform/" role="button" class="btn btn-default sub-btn">Registration&nbsp;<span class="glyphicon glyphicon-briefcase"></span></a> 
 				  
 				</div>
 				 
 					<div class="col-sm-7">
 					<div style="padding: 10px;"></div>
 					<div class="alert alert-info" role="alert">
-						<p><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Check a email, on regist.</p>
+						<p><span class="glyphicon glyphicon-info-sign"></span>&nbsp;This email, Activation Off. Please, Registation.</p>
 					</div>
 					</div>
 			   </div>
@@ -52,8 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  		</div>	
  	
 
-<div style="display:none;" id="change"><?=$change?></div>
-<div style="display:none;" id="status"><?=$status?></div>
+<div style="display:none;" id="change"></div>
+<div style="display:none;" id="status"></div>
 <div style="padding:10px;"></div>
 <div style="padding:10px;"></div>
 <div style="background-color: #25292D;color:white;padding-top:150px;padding-left:10px;">
@@ -107,7 +107,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--basic template -->
 <script src="/views/js/bootstrap.min.js"></script>	
-<script src="/views/js/jquery.validate.js"></script>
 <script>
 $('.panel').addClass('panel-info');
 $('.panel-heading').css('background-color','#25292D').css('color','white');
@@ -128,7 +127,9 @@ $('.sub-btn').click(function(){
 });
 </script>
 <script>
-$("#Form").validate(); 
+$(document).ready(function(){
+	//alert($('#status').text());
+});	
 </script>
 </body>
 </html>

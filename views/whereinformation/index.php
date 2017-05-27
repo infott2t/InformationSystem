@@ -1769,15 +1769,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<br/>
 						<p>Libraly Parts-3F-1,2 Maps Announce.</p>
 						<p>private reaserch room.</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
 						<p>120, 120(total 240) vacancy.</p>
-=======
-						<p>120,120(total 240) vacancy.</p>
->>>>>>> 6202e126bb1eb3aae23a86dd2cd62c07e4367bad
-=======
-						<p>120,120(total 240) vacancy.</p>
->>>>>>> 6202e126bb1eb3aae23a86dd2cd62c07e4367bad
 						<p>desk partrition and screen off.</p>
 						<p>person private desk.</p>
 					</div>
@@ -2166,6 +2158,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<li><a href="/index.php/planning/">Planning</a></li>
      	<li><a href="/index.php/claime/">Claime</a></li>
      	<li><a href="/index.php/diarly/">Diarly</a></li>
+	  </ul>
+      <ul class="nav navbar-nav navbar-left">
      	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Link<span class="caret"></span></a>
      	<ul class="dropdown-menu">
           <li>Information system for work</li>

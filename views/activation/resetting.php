@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="panel-heading"><h1>Email, Activation.&nbsp;<span class="glyphicon glyphicon-refresh"></span></h1></div>
 			<div class="panel-body">
 	
-	<?php echo form_open('activation/form_input','class="form-horizontal"') ?>
+	<?php echo form_open('activation/resetting','class="form-horizontal" id="Form"') ?>
 			  <p>&nbsp;</p>
 			  <div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -30,45 +30,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			  </div>
 			  <div class="form-group">
 				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-				<div class="col-sm-10">
+				<div class="col-sm-10" style="height:102px;">
 				  <input type="password" name="pw" class="form-control" id="inputPassword3" placeholder="Password">
-				  <div style="padding:5px 0px;"></div>
+				  
 				</div>
 				
 				<label for="inputPassword4" class="col-sm-2 control-label"></label>
-				<div class="col-sm-10">
+				<div class="col-sm-10" style="height:102px;">
 				  <input type="password" name="pw2" class="form-control" id="inputPassword4" placeholder="Rewrite, Password">
 				</div>
 			  </div>
-			  <div class="col-sm-offset-1 col-sm-11">
-			  	<h3>Person Information</h3>
-			  </div>
-			  <div class="form-group">
-				<label for="inputName" class="col-sm-2 control-label">Name</label>
-				<div class="col-sm-10">
-				  <input type="text" name="name" class="form-control" id="inputNmae" placeholder="Name" value="<?php echo set_value('name'); ?>">
-				</div>
-			  </div>
+			 
 			  <div class="form-group">
 				<div class="col-sm-offset-2 col-sm-3">
 				  <button type="submit" class="btn btn-default btn-sub">Reset&nbsp;<span class="glyphicon glyphicon-refresh"></span></button>
 				  </div>
 			  
-				<?php if(validation_errors()==""):?>
-				<div style="padding:10px;"></div>
-				<div class="col-sm-7">
-			 	<div id="err-mag-panel"class="alert" role="alert" style="height:140px;">
-					<div id="err-msg">&nbsp;</div>
-				</div>
-				</div>
-				<?php else : ?>
-				<div style="padding:10px;"></div>
-	 			<div class="col-sm-7">
-			 	<div class="alert alert-info" role="alert" style="height:140px;">
-					<p><span class="glyphicon glyphicon-alert"></span><?php echo validation_errors()?></p>
-				</div>
-				</div>
-				<?php endif; ?> 
+				
 				</div>		
 			</form>
 	</div>
@@ -77,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="title-s">
 	  <h1>You are Welcome. <small>For better workplace.</small></h1>
 </div>
-<div id="status" style="display:none;"><?=$status?></div>
+<div id="status" style="display:none;"></div>
 <div style="padding:10px;"></div> 
 
 <div style="padding:10px;"></div>
@@ -153,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--basic template -->
 <script src="/views/js/bootstrap.min.js"></script>
- 
+<script src="/views/js/jquery.validate.js"></script> 
 </body>
 
 <script>
@@ -241,11 +219,31 @@ $('.btn-sub').click(function(){
 	});
 </script>
 <script>
-	$(document).ready(function(){
-		//alert($('#status').html());
-		if($('#status').html()=="Input password different, each other."){
-			$('#err-mag-panel').addClass('alert-warning');
-			$('#err-msg').append("<span class='glyphicon glyphicon-alert'></span>&nbsp;<p>Input password different, each other.</p>");
+	
+	$("#Form").validate({
+		rules:{
+		 
+			pw: {
+				required: true,
+				minlength: 5
+			},
+			pw2: {
+				required: true,
+				minlength: 5,
+				equalTo: "#inputPassword3"
+			}
+		},
+		messages:{
+			
+			pw: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long."
+			},
+			pw2:{
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long.",
+				equalTo: "Please enter the same password as above"
+			}
 		}
 	});
 </script>

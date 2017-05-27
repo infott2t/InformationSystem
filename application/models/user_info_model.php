@@ -84,7 +84,7 @@ class User_info_model extends CI_Model {
 		$temp_result="";
 		
 		$this->load->helper('url');
-		$temp_email = $this->session->userdata('useremail');
+		$temp_email = $this->input->post('email');
 		$temp_pw = $this->input->post('pw');
 		$temp_pw2 = $this->input->post('pw2');
 		$temp_name = $this->input->post('name');
@@ -117,7 +117,7 @@ class User_info_model extends CI_Model {
 			
 		$this->db->where('user_email',$temp_email);
 		$query = $this->db->update('user_info', $data);
-			$this->session->set_userdata($newdata);		
+		$this->session->set_userdata($newdata);		
 		$temp_result="success";	
 		}else{
 			$temp_result="false";
@@ -125,6 +125,130 @@ class User_info_model extends CI_Model {
 		
 		return $temp_result;
 	}
+	
+	public function resset_password()
+	{
+		$temp_result="";
+		$this->load->helper('url');
+		$temp_email = $this->input->post('email');
+		
+		$this->db->where('user_email',$temp_email);
+		$this->db->where('is_activation',1);
+		$this->db->from('user_info');
+		$query = $this->db->get();
+		
+		if($query->num_rows()>0){
+			
+			$temp_emailcopy = $temp_email;
+			$temp_md5key = rand(1,2147483647);
+			$temp_md5key =$temp_md5key.$temp_emailcopy;
+			$temp_md5key = hash('sha512',md5($temp_md5key));
+			
+			$data = array(
+			'md5key' => $temp_md5key	
+			);	
+			
+		$this->db->where('user_email',$temp_email);
+		$query = $this->db->update('user_info', $data);
+			
+		if($this->db->affected_rows() > 0){
+		$temp_url = "http://www.jcoop.xyz/index.php/activation/resetKey/".$temp_md5key;
+		
+		$this->load->library('email');
+		
+		$context= 'Password reset. Information Sytem For Work.';
+		$this->email->from('WebAdimister@jcoop.xyz', 'HYEONIL CHOI');
+		$this->email->to($temp_email);
+		$this->email->subject($context);
+		$this->email->message('<table id="__01" width="600" height="745" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="7">
+			<img src="http://www.jcoop.xyz/img_password/index_01.jpg" width="600" height="126" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="7">
+			<img src="http://www.jcoop.xyz/img_password/index_02.jpg" width="600" height="22" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="6">
+			<img src="http://www.jcoop.xyz/img_password/index_03.jpg" width="40" height="445" alt=""></td>
+		<td colspan="5" style="width:519px;height:99px;">
+			<h1>Hello. Sending reset password link.</h1>
+			 </td>
+		<td rowspan="6">
+			<img src="http://www.jcoop.xyz/img_password/index_05.jpg" width="41" height="445" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5" style="width:591px;height:100px;">
+			<h3>Reset Password, Information System for work.</h3>
+			</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="http://www.jcoop.xyz/img_password/index_07.jpg" width="519" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="http://www.jcoop.xyz/img_password/index_08.jpg" width="102" height="49" alt=""></td>
+		<td>
+			<a href="'.$temp_url.'"><img src="http://www.jcoop.xyz/img_password/index_09.jpg" width="319" height="49" alt=""></a></td>
+		<td colspan="2">
+			<img src="http://www.jcoop.xyz/img_password/index_10.jpg" width="98" height="49" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5" style="width:519px;height:121px;">
+			<h3>Enjoy, Today. Thank you.</h3>
+			<p>Wait, your response.</p>
+			<p style="text-align: right;"><a href="http://www.jcoop.xyz">http://www.jcoop.xyz</a>, Web Admin,</p>
+			<p style="text-align:right;"><a>capegon21@gmail.com</a> HYEONIL CHOI</p>
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/index_12.jpg" width="24" height="46" alt=""></td>
+		<td colspan="3">
+			<img src="http://www.jcoop.xyz/img_password/index_13.jpg" width="471" height="46" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/index_14.jpg" width="24" height="46" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="7">
+			<img src="http://www.jcoop.xyz/img_password/index_15.jpg" width="600" height="23" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="7">
+			<img src="http://www.jcoop.xyz/img_password/index_16.jpg" width="600" height="128" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="40" height="1" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="24" height="1" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="78" height="1" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="319" height="1" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="74" height="1" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="24" height="1" alt=""></td>
+		<td>
+			<img src="http://www.jcoop.xyz/img_password/spacer.gif" width="41" height="1" alt=""></td>
+	</tr>
+</table>');
+				$this->email->send();
+				$temp_result="success";
+			}else{
+			$temp_result="false";
+			}
+		}else{
+			$temp_result="false";
+		}
+		
+		return $temp_result;
+	}
+	
+
 	
 	public function set_user_info_name()
 	{
@@ -437,7 +561,33 @@ class User_info_model extends CI_Model {
 		}
 		
 		
-	} 
+	}
+	public function chk_reset_key($value){
+		
+		$temp_result="";
+		$this->db->where('md5key',$value);
+		$this->db->from('user_info');
+		$query=$this->db->get();
+		 
+		if($query->num_rows()>0){
+			foreach ($query->result() as $row)
+			{
+				$newdata = array(
+				'username' => $row->user_name,
+				'useremail'=> $row->user_email,
+				'logged_in'=> TRUE
+				); 
+			}
+			 
+			$this->session->set_userdata($newdata);
+			$temp_result="success";
+			
+		}else{
+			$temp_result="false";
+		}
+		
+		return $temp_result;
+	}
 	
 	public function chk_key_activation_on($value)
 	{
@@ -469,9 +619,17 @@ class User_info_model extends CI_Model {
 		}
 		
 		if($temp_result=="success0"){
-		$data = array(
+			
+			$temp_useremailcopy = $temp_useremail;
+			$temp_md5key = rand(1,2147483647);
+			$temp_md5key =$temp_md5key.$temp_useremailcopy;
+			$temp_md5key = hash('sha512',md5($temp_md5key));
+			
+			$data = array(
+			'md5key' => $temp_md5key,
 			'is_activation' => TRUE
 			);
+			
 			$this->db->where('user_email',$temp_useremail);
 			$this->db->where('is_activation',TRUE);
 			$this->db->from('user_info');
@@ -548,21 +706,42 @@ class User_info_model extends CI_Model {
 		
 		$this->load->helper('url');
 		$temp_chkEmail = $this->input->post('email');
-		
 		$this->db->where('user_email',$temp_chkEmail);
+		$this->db->where('is_activation',TRUE);
 		$this->db->from('user_info');
 		$query = $this->db->get();
 		
 		
 		if($query->num_rows()>0){
-			
-			foreach ($query->result() as $row)
-			{
-				 
-				$temp_userpw = $row->user_pw;
-				  
+			$this->session->set_userdata('tempemail',$temp_chkEmail);
+			$temp_result="activation_on";
+		}else{
+			$this->session->set_userdata('tempemail',$temp_chkEmail);
+			$this->db->where('user_email',$temp_chkEmail);
+			$query = $this->db->delete('user_info');
+			if($this->db->affected_rows() > 0){
+			$temp_result="activation_off";
+			}else{
+				
 			}
+		}
 			
+		return $temp_result;
+			/*$temp_chkEmailcopy = $temp_chkEmail;
+			$temp_md5key = rand(1,2147483647);
+			$temp_md5key =$temp_md5key.$temp_chkEmailcopy;
+			$temp_md5key = hash('sha512',md5($temp_md5key));
+			
+			$data = array(
+			'user_email' => $temp_email,
+			'md5key' => $temp_md5key
+			);	
+			
+			$this->db->where('user_email',$temp_chkEmail);
+			$this->db->where('is_activation',1);
+			$query = $this->db->update('user_info',$data);
+			if($this->db->affected_rows() > 0){
+				
 			$this->load->library('email');
 			
 			$context= 'To '.$temp_chkEmail.', Send to password, your email.';
@@ -573,17 +752,22 @@ class User_info_model extends CI_Model {
 			$this->email->subject($context);
 			$this->email->message('<a>Hello.</a><br/><p>Forgot password,</p> <p>that :</p>');
 		
-			//$this->email->message('Password : '.);
+		
 
 			$val22=$this->email->send();
 			echo $this->email->print_debugger();
 			$temp_result="success";
+				
+			}
+			
+			
+			
 			
 		}else{
 			$temp_result="email-error";
 		}
 		
-		return $temp_result;
+		return $temp_result;*/
 	}
 	
 	public function acti_send_user_mail()
@@ -681,6 +865,40 @@ class User_info_model extends CI_Model {
 		
 	}
 	
+	public function reset_password(){
+		$temp_result="";
+		
+		$this->load->helper('url');
+		$temp_email = $this->input->post('email'); 
+		$temp_pw = $this->input->post('pw');
+		$temp_pw2 = $this->input->post('pw2');
+		
+		if($temp_pw == $temp_pw2){
+			
+			$temp_pw = hash('sha512',md5($temp_pw));
+			$temp_emailcopy = $temp_email;
+			$temp_md5key = rand(1,2147483647);
+			$temp_md5key =$temp_md5key.$temp_emailcopy;
+			$temp_md5key = hash('sha512',md5($temp_md5key));
+			
+			$data = array(
+				'user_pw' => $temp_pw,
+				'md5key' => $temp_md5key
+			);
+			
+			$this->db->where('user_email',$temp_email);
+			$this->db->update('user_info',$data);
+			if($this->db->affected_rows() > 0){
+			
+				$temp_result="success";	
+			}
+			
+		}else{
+			$temp_result="fail";
+		}
+		
+		return $temp_result;
+	}
 	
 }
 

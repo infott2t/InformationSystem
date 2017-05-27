@@ -240,20 +240,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a class="navbar-brand" href="#">Information system for work</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     
-		  <ul class="nav navbar-nav">
-			<li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
-			<ul class="dropdown-menu">
-				<li style="padding: 5px 0px;"><a href="/index.php/welcome">Welcome</a></li>
-				<li><a href='/index.php/login/'>LOG IN</a></li>
-				<li><a href='/index.php/register/'>Registeration</a></li>
-			</ul>
-			</li>
-			<li><a href="/index.php/whereInformation/">Where information</a></li>
-			  <li><a href="/index.php/planning/">Planning</a></li>
-			<li><a href="/index.php/claime/">Claime</a></li>
-			<li><a href="/index.php/diarly/">Diarly</a></li>
-		  </ul>
+        <?php if($this->session->userdata('logged_in')):?>
+      <ul class="nav navbar-nav">
+        <li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
+        <ul class="dropdown-menu">
+			<li style="padding: 5px 0px;"><a href="/index.php/welcome/">Welcome</a></li>
+		    <li><a href='/index.php/login/'><?=$this->session->userdata('useremail')?></a></li>
+        </ul>
+        </li>
+        <li><a href="/index.php/whereInformation/">Where information</a></li>
+		  <li><a href="/index.php/planning/">Planning</a></li>
+     	<li><a href="/index.php/claime/">Claime</a></li>
+     	<li><a href="/index.php/diarly/">Diarly</a></li>
+      </ul>
+   <?php else : ?>
+   	  <ul class="nav navbar-nav">
+        <li class="dropdown active"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="sr-only">(current)</span><span class="caret"></a>
+        <ul class="dropdown-menu">
+			<li style="padding: 5px 0px;"><a href="#">Welcome</a></li>
+		    <li><a href='/index.php/login/'>LOG IN</a></li>
+		    <li><a href='/index.php/register/'>Registeration</a></li>
+        </ul>
+        </li>
+        <li><a href="/index.php/whereInformation/">Where information</a></li>
+		  <li><a href="/index.php/planning/">Planning</a></li>
+     	<li><a href="/index.php/claime/">Claime</a></li>
+     	<li><a href="/index.php/diarly/">Diarly</a></li>
+      </ul>
+   <?php endif; ?>
 	  
        <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
