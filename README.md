@@ -118,7 +118,7 @@ for example, Information System for better workplace.
 
 <br/>
 <p>I use, <a href="https://github.com/ee32320/InformationSystem">Github</a>,<a href="https://twitter.com/eecncn_choi">Twitter</a>.</p>
-<p>Desingned and built, <a href="https://twitter.com/eecncn_choi">@eecncn_choi</a>, <a href="https://twitter.com/tt2t2am1118">@tt2t2am1118</a>.</p>
+<p>Desingned and built, <a href="https://twitter.com/tt2t2am1118">@tt2t2am1118</a>.</p>
 
 <p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem/blob/master/LICENSE"> https://github.com/ee32320/InformationSystem/blob/master/LICENSE</a> ; MIT</p>
 
