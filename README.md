@@ -123,8 +123,8 @@ for example, Information System for better workplace.
 <p>Code Licensed, <a href="https://github.com/ee32320/InformationSystem/blob/master/LICENSE"> https://github.com/ee32320/InformationSystem/blob/master/LICENSE</a> ; MIT</p>
 
 <p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> ; CC BY 4.0</p>
-<h4>This webpage, write day : 2018-01-04</h4>
-<h4> This readme file(https://github.com/infott2t/InformationSystem/blob/master/README.md), update last, 2020-02-15.</h4>
+
+<h4> This readme file(https://github.com/infott2t/InformationSystem/blob/master/README.md), first, 2018-01-04. Update last, 2020-02-15.</h4>
 <br/> 
 
 
