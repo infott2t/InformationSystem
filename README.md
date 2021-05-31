@@ -2,6 +2,7 @@
 for example, Information System for better workplace.
 
 <h2>You're Welcome.</h2>
+<h2>Let's safely use smartphones, etc. Thank you.</h2>
 <p>I learn, Testting(study) Web development. Github; https://github.com/ee32320/InformationSystem.</p>
 <p></p>
 <p>Welcome, guest. This Website, wrong view, wrong message view, possible. Please, understand this way.</p>
@@ -125,5 +126,5 @@ for example, Information System for better workplace.
 <p>Docs Licensed, <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a> ; CC BY 4.0</p>
 <br/> 
 
-
+<h2>And Let's go church. Jesus Christ. Restting place, on life. Calling on church~. How about this. Thank you.</h2>
 <h1>Thank you, for watching.</h1>
